@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Week of year</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="/css/index.css"></link>
+</head>
+
+<body>
+
+	<p></p>
+	<div id="header">
+		<h1>
+			<span>Hányadik hét van?</span>
+		</h1>
+	</div>
+	<div id="content--left"><p class="cl">Most a</p></div>
+	<div id="content">
+		<p class="description">
+			<span class="pl"></span> <span th:text="${weekofyear}"></span>
+		</p>
+	</div>
+	<div id="content--right"><p class="cr">hét van.</p></div>
+	<div>
+		<small><span id="date" th:text="${date}"></span></small>
+	</div>
+</body>
+
+</html>
